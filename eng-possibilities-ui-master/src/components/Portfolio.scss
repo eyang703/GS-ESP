@@ -1,0 +1,36 @@
+.portfolio {
+   background-color: #143938;
+   height: 90vh;
+   border-radius: 10px;
+}
+.center {
+   text-align: center;
+   color: white;
+   padding-top: 5px;
+}
+.card {
+   width: 40%;
+   float: left;
+   margin-left: 6%;
+   padding: 10px 10px 0px 10px;
+   background-color: #F0EDEA;
+}
+.fraction-cards {
+   width: 100%;
+}
+.spacer {
+   width: 100%;
+   margin-top: 22%;
+}
+.descriptor {
+   text-align: left;
+   color: #555464;
+   margin-bottom: 0;
+}
+.number {
+   color: #000000;
+   font-size: 3em;
+   text-align: right;
+   margin-bottom: 0;
+   font-weight: bold;
+}

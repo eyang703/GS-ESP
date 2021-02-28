@@ -1,0 +1,57 @@
+.investment {
+   border: 1px solid #DFF6E9;
+   border-radius: 5px;
+   color: #F4F1F1;
+   margin: 10px 10px 0px 10px;
+   padding: 7px;
+   height: auto;
+   float: left;
+   width: 95%;
+}
+.category {
+   width: 80%;
+   float: left;
+   [data-icon] {
+       padding-left: 15px;
+       &:before { 
+           content: attr(data-icon); 
+       }
+   }
+}
+.arrows {
+   float: right;
+}
+.up {
+   width: 0; 
+   height: 0; 
+   border-left: 7px solid transparent;
+   border-right: 7px solid transparent;
+   border-bottom: 7px solid #6AB284;
+   margin-top: 3px;
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+.down {
+   width: 0; 
+   height: 0; 
+   border-left: 7px solid transparent;
+   border-right: 7px solid transparent;
+   border-top: 7px solid #6AB284;
+   cursor: pointer;
+}
+.percent {
+   float: right;
+   background: white;
+   width: 15%;
+   margin-left: 7px;
+   border-radius: 7px;
+   text-align: right;
+   padding-right: 10px;
+   color: black;
+}
+#red {
+   color: red;
+}
+#black {
+   color: black;
+}
