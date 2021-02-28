@@ -33,18 +33,7 @@ class Portfolio extends React.Component {
         return (
             <div className="portfolio">
                 <div class="center">
-                    <h5>My portfolio</h5>
-                    <h1>$10,000</h1>
-                    <div class="fraction-cards">
-                        <div class="card">
-                            <p class="descriptor">Used</p>
-                            <p class="number">{this.state.used}%</p>
-                        </div>
-                        <div class="card">
-                            <p class="descriptor">Remaining</p>
-                            <p class="number">{100-this.state.used}%</p>
-                        </div>
-                    </div>
+                   <h1>My portfolio</h1>
                 </div>
                 <div className="spacer">
                 </div>

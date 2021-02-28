@@ -4,19 +4,27 @@
 }
 .not-portfolio-section {
    width: 60%;
+
    float: left;
 }
 .widgets-section {
-   height: 22vh;
+   height: 16vh;
    background: #F0EDEA;
    border-radius: 10px;
    margin-left: 10px;
-   padding-top: 20px;
+   padding-top: 15px;
+
 }
 .graph-section {
-   height: 65vh;
+   height: 55vh;
+   stroke: #7399C6;
    background: #F0EDEA;
    border-radius: 10px;
-   margin: 20px 0px 0px 10px;
-   padding: 20px;
+   margin: 20px 0px 30px 10px;
+   padding: 25px;
+}
+
+.desc {
+  font-size: 20px;
+  weight: strong;
 }

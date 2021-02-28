@@ -21,7 +21,7 @@ class InvestmentCategory extends React.Component {
             this.props.useMore()
         }
         // concurrent so check if it's just under the threshold
-        if (this.state.percentage == this.minimum - 1) {
+        if (this.state.percentage === this.minimum - 1) {
             this.setState({
                 belowMinimum: false
             })
@@ -54,11 +54,14 @@ class InvestmentCategory extends React.Component {
                 <div className="percent" id={this.state.belowMinimum ? "red" : "black"}>
                     {this.state.percentage}.00 %
                 </div>
+
                 <div className="arrows">
-                    <div className="up" onClick={this.increasePercent}></div>
-                    <div className="down" onClick={this.decreasePercent}></div>
+                     <div className="up" onClick={this.increasePercent}></div>
+                     <div className="down" onClick={this.decreasePercent}></div>
                 </div>
             </div>
+
+
         );
     }
 }

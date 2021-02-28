@@ -31,12 +31,18 @@ class ForecasterHome extends React.Component {
     ];
 
     const FlexibleXYPlot = makeHeightFlexible(makeWidthFlexible(XYPlot))
-    var titles = ['Investment Forecaster', 'Predicted Amount', 'Dollar Increase', 'Percent Increase']
-    var descriptions = ['This page allows you to customize your investments and view the potential growth of $10,000 over a period of 10 years', '$15,128', '+ $5,128', '51.28%']
-    var isnum = [false, true, true, true]
+    var titles = [ 'Predicted Amount', 'Dollar Increase', 'Percent Increase']
+    var descriptions = ['$17,520', '+ $7,520', '75.20%']
+    var isnum = [ true, true, true]
     var widgets = []
     for (var i = 0; i < titles.length; i++) {
       widgets.push(<Widget title={titles[i]} description={descriptions[i]} isNum={isnum[i]}/>)
+    }
+    var titles2 = ['Starting Amount', 'Invested', 'Remaining']
+    var descriptions2 = ['$10,000', '72%', '28%']
+    var widgets2 = []
+    for(var j = 0; j < titles2.length; j++) {
+      widgets2.push(<Widget title={titles2[j]} description={descriptions2[j]} isNum ={isnum[j]}/>)
     }
     return (
       <>
@@ -46,9 +52,13 @@ class ForecasterHome extends React.Component {
                   <Portfolio/>
                 </div>
                 <div class="not-portfolio-section">
-                  <div class="widgets-section">
-                    {widgets}
+                <div class="desc">
+
+                 </div>
+                 <div class="widgets-section">
+                  {widgets2}
                   </div>
+
                   <div class="graph-section">
                     <FlexibleXYPlot 
                     margin={{left: 70, right: 50, top: 10, bottom: 50}}
@@ -59,12 +69,15 @@ class ForecasterHome extends React.Component {
                         onNearestX={(value, {index}) =>
                       this.setState({crosshairValues: DATA.map(d => d[index])})}
                         data={DATA[0]} 
-                        color="#6D9A7D"/>
+                        color="#7399C6"/>
                         <Crosshair values={this.state.crosshairValues}/>
                       <XAxis />
                       <YAxis />
                     </FlexibleXYPlot>
                   </div>
+                  <div class="widgets-section">
+                    {widgets}
+                   </div>
                 </div>
               </div>
             </div>
